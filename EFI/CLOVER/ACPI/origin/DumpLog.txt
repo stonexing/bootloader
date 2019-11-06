@@ -1,0 +1,137 @@
+31:977  1:866  Found BIOS RSDP at F05B0
+31:977  0:000  Printing ACPI tables from RSDP F05B0 ...
+31:977  0:000   F05B0: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+31:977  0:000    (Rsdt: B6172028)
+31:977  0:000    B6172028: 'RSDT', 'A M I', Rev: 1, Len: 116
+31:977  0:000    Tables in Rsdt: 20
+31:977  0:000    0. B6172178: 'FACP', 'A M I', Rev: 2, Len: 132
+31:977  0:000        (Dsdt: B6172200, Facs: B651BC00)
+31:977  0:000        B6172200: 'DSDT', 'A M I', Rev: 2, Len: 163058
+31:977  0:000        B651BC00: 'FACS', Ver: 0, Len: 64
+31:977  0:000    1. B619A010: 'APIC', 'A M I', Rev: 3, Len: 132
+31:977  0:000    2. B619A098: 'FPDT', 'A M I', Rev: 1, Len: 68
+31:977  0:000    3. B619A0E0: 'MCFG', 'A M I', Rev: 1, Len: 60
+31:977  0:000    4. B619A120: 'FIDT', 'A M I', Rev: 1, Len: 156
+31:977  0:000    5. B619A1C0: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+31:977  0:000    6. B619D318: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+31:977  0:000    7. B619F860: 'HPET', 'SKL', Rev: 1, Len: 56
+31:977  0:000    8. B619F898: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+31:977  0:000    9. B61A06D8: 'SSDT', 'xh_rvp10', Rev: 2, Len: 2303
+31:977  0:000    10. B61A0FD8: 'UEFI', 'EDK2', Rev: 1, Len: 66
+31:977  0:000    11. B61A1020: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+31:977  0:000    12. B61A1F00: 'LPIT', 'SKL', Rev: 1, Len: 148
+31:977  0:000    13. B61A1F98: 'WSMT', 'SKL', Rev: 1, Len: 40
+31:977  0:000    14. B61A1FC0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+31:977  0:000    15. B61A2260: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+31:977  0:000    16. B61A5268: 'DBGP', '', Rev: 1, Len: 52
+31:977  0:000    17. B61A52A0: 'DBG2', '', Rev: 0, Len: 84
+31:977  0:000    18. B61A52F8: 'BGRT', 'A M I', Rev: 1, Len: 56
+31:977  0:000    19. B61A5330: 'DMAR', 'SKL', Rev: 1, Len: 168
+31:977  0:000  Found UEFI Acpi 2.0 RSDP at B6172000
+31:977  0:000  Saving ACPI tables from RSDP B6172000 to EFI\CLOVER\ACPI\origin ...
+31:977  0:000   B6172000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+32:011  0:034    (Xsdt: B61720A0, Rsdt: B6172028)
+32:011  0:000    B61720A0: 'XSDT', 'A M I', Rev: 1, Len: 196 -> XSDT.aml
+32:033  0:021    B6172028: 'RSDT', 'A M I', Rev: 1, Len: 116 -> RSDT.aml
+32:054  0:021    Tables in Xsdt: 20
+32:054  0:000    0. B6199EF8: 'FACP', 'A M I', Rev: 6, Len: 276 -> FACP.aml
+32:074  0:020        (Dsdt: B6172200, Facs: B651BC40, XDsdt: B6172200, XFacs: 0)
+32:074  0:000        B6172200: 'DSDT', 'A M I', Rev: 2, Len: 163058 -> DSDT.aml
+32:102  0:028        B651BC40: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+32:124  0:021    1. B619A010: 'APIC', 'A M I', Rev: 3, Len: 132 -> APIC.aml
+32:146  0:022    2. B619A098: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
+32:169  0:022    3. B619A0E0: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+32:190  0:021    4. B619A120: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
+32:212  0:022    5. B619A1C0: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628 -> SSDT-0-SaSsdt.aml
+32:235  0:022    6. B619D318: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540 -> SSDT-1-PegSsdt.aml
+32:261  0:025    7. B619F860: 'HPET', 'SKL', Rev: 1, Len: 56 -> HPET.aml
+32:282  0:021    8. B619F898: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643 -> SSDT-2-Ther_Rvp.aml
+32:303  0:020    9. B61A06D8: 'SSDT', 'xh_rvp10', Rev: 2, Len: 2303 -> SSDT-3-xh_rvp10.aml
+32:324  0:020    10. B61A0FD8: 'UEFI', 'EDK2', Rev: 1, Len: 66 -> UEFI.aml
+32:345  0:021    11. B61A1020: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806 -> SSDT-4-CpuSsdt.aml
+32:367  0:022    12. B61A1F00: 'LPIT', 'SKL', Rev: 1, Len: 148 -> LPIT.aml
+32:389  0:021    13. B61A1F98: 'WSMT', 'SKL', Rev: 1, Len: 40 -> WSMT.aml
+32:410  0:020    14. B61A1FC0: 'SSDT', 'sensrhub', Rev: 2, Len: 671 -> SSDT-5-sensrhub.aml
+32:434  0:024    15. B61A2260: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290 -> SSDT-6-PtidDevc.aml
+32:457  0:022    16. B61A5268: 'DBGP', '', Rev: 1, Len: 52 -> DBGP.aml
+32:480  0:023    17. B61A52A0: 'DBG2', '', Rev: 0, Len: 84 -> DBG2.aml
+32:503  0:022    18. B61A52F8: 'BGRT', 'A M I', Rev: 1, Len: 56 -> BGRT.aml
+32:526  0:023    19. B61A5330: 'DMAR', 'SKL', Rev: 1, Len: 168 -> DMAR.aml
+32:550  0:023    Tables in Rsdt: 20
+32:550  0:000    0. B6172178: 'FACP', 'A M I', Rev: 2, Len: 132 -> RSDT-FACP.aml
+32:573  0:022        (Dsdt: B6172200, Facs: B651BC00)
+32:573  0:000        B6172200: 'DSDT', 'A M I', Rev: 2, Len: 163058
+32:573  0:000        B651BC00: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+32:595  0:022    1. B619A010: 'APIC', 'A M I', Rev: 3, Len: 132
+32:595  0:000    2. B619A098: 'FPDT', 'A M I', Rev: 1, Len: 68
+32:595  0:000    3. B619A0E0: 'MCFG', 'A M I', Rev: 1, Len: 60
+32:595  0:000    4. B619A120: 'FIDT', 'A M I', Rev: 1, Len: 156
+32:595  0:000    5. B619A1C0: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+32:595  0:000    6. B619D318: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+32:595  0:000    7. B619F860: 'HPET', 'SKL', Rev: 1, Len: 56
+32:595  0:000    8. B619F898: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+32:595  0:000    9. B61A06D8: 'SSDT', 'xh_rvp10', Rev: 2, Len: 2303
+32:595  0:000    10. B61A0FD8: 'UEFI', 'EDK2', Rev: 1, Len: 66
+32:595  0:000    11. B61A1020: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+32:595  0:000    12. B61A1F00: 'LPIT', 'SKL', Rev: 1, Len: 148
+32:595  0:000    13. B61A1F98: 'WSMT', 'SKL', Rev: 1, Len: 40
+32:595  0:000    14. B61A1FC0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+32:595  0:000    15. B61A2260: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+32:595  0:000    16. B61A5268: 'DBGP', '', Rev: 1, Len: 52
+32:595  0:000    17. B61A52A0: 'DBG2', '', Rev: 0, Len: 84
+32:595  0:000    18. B61A52F8: 'BGRT', 'A M I', Rev: 1, Len: 56
+32:595  0:000    19. B61A5330: 'DMAR', 'SKL', Rev: 1, Len: 168
+32:595  0:000  Found UEFI Acpi 1.0 RSDP at B6172000
+32:595  0:000  Printing ACPI tables from RSDP B6172000 ...
+32:595  0:000   B6172000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+32:595  0:000    (Xsdt: B61720A0, Rsdt: B6172028)
+32:595  0:000    B61720A0: 'XSDT', 'A M I', Rev: 1, Len: 196
+32:595  0:000    B6172028: 'RSDT', 'A M I', Rev: 1, Len: 116
+32:595  0:000    Tables in Xsdt: 20
+32:595  0:000    0. B6199EF8: 'FACP', 'A M I', Rev: 6, Len: 276
+32:595  0:000        (Dsdt: B6172200, Facs: B651BC40, XDsdt: B6172200, XFacs: 0)
+32:595  0:000        B6172200: 'DSDT', 'A M I', Rev: 2, Len: 163058
+32:595  0:000        B651BC40: 'FACS', Ver: 2, Len: 64
+32:595  0:000    1. B619A010: 'APIC', 'A M I', Rev: 3, Len: 132
+32:595  0:000    2. B619A098: 'FPDT', 'A M I', Rev: 1, Len: 68
+32:595  0:000    3. B619A0E0: 'MCFG', 'A M I', Rev: 1, Len: 60
+32:595  0:000    4. B619A120: 'FIDT', 'A M I', Rev: 1, Len: 156
+32:595  0:000    5. B619A1C0: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+32:595  0:000    6. B619D318: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+32:595  0:000    7. B619F860: 'HPET', 'SKL', Rev: 1, Len: 56
+32:595  0:000    8. B619F898: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+32:595  0:000    9. B61A06D8: 'SSDT', 'xh_rvp10', Rev: 2, Len: 2303
+32:595  0:000    10. B61A0FD8: 'UEFI', 'EDK2', Rev: 1, Len: 66
+32:595  0:000    11. B61A1020: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+32:595  0:000    12. B61A1F00: 'LPIT', 'SKL', Rev: 1, Len: 148
+32:595  0:000    13. B61A1F98: 'WSMT', 'SKL', Rev: 1, Len: 40
+32:595  0:000    14. B61A1FC0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+32:595  0:000    15. B61A2260: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+32:595  0:000    16. B61A5268: 'DBGP', '', Rev: 1, Len: 52
+32:595  0:000    17. B61A52A0: 'DBG2', '', Rev: 0, Len: 84
+32:595  0:000    18. B61A52F8: 'BGRT', 'A M I', Rev: 1, Len: 56
+32:595  0:000    19. B61A5330: 'DMAR', 'SKL', Rev: 1, Len: 168
+32:595  0:000    Tables in Rsdt: 20
+32:595  0:000    0. B6172178: 'FACP', 'A M I', Rev: 2, Len: 132
+32:595  0:000        (Dsdt: B6172200, Facs: B651BC00)
+32:595  0:000        B6172200: 'DSDT', 'A M I', Rev: 2, Len: 163058
+32:595  0:000        B651BC00: 'FACS', Ver: 0, Len: 64
+32:595  0:000    1. B619A010: 'APIC', 'A M I', Rev: 3, Len: 132
+32:595  0:000    2. B619A098: 'FPDT', 'A M I', Rev: 1, Len: 68
+32:595  0:000    3. B619A0E0: 'MCFG', 'A M I', Rev: 1, Len: 60
+32:595  0:000    4. B619A120: 'FIDT', 'A M I', Rev: 1, Len: 156
+32:595  0:000    5. B619A1C0: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+32:595  0:000    6. B619D318: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+32:595  0:000    7. B619F860: 'HPET', 'SKL', Rev: 1, Len: 56
+32:595  0:000    8. B619F898: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+32:595  0:000    9. B61A06D8: 'SSDT', 'xh_rvp10', Rev: 2, Len: 2303
+32:595  0:000    10. B61A0FD8: 'UEFI', 'EDK2', Rev: 1, Len: 66
+32:595  0:000    11. B61A1020: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+32:595  0:000    12. B61A1F00: 'LPIT', 'SKL', Rev: 1, Len: 148
+32:595  0:000    13. B61A1F98: 'WSMT', 'SKL', Rev: 1, Len: 40
+32:595  0:000    14. B61A1FC0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+32:595  0:000    15. B61A2260: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+32:595  0:000    16. B61A5268: 'DBGP', '', Rev: 1, Len: 52
+32:595  0:000    17. B61A52A0: 'DBG2', '', Rev: 0, Len: 84
+32:595  0:000    18. B61A52F8: 'BGRT', 'A M I', Rev: 1, Len: 56
+32:595  0:000    19. B61A5330: 'DMAR', 'SKL', Rev: 1, Len: 168
